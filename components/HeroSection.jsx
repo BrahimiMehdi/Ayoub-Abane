@@ -25,8 +25,8 @@ const HeroSection = ({ openSideBar }) => {
       )
       
       .from(navBar.current,{x:"300px",delay:1,ease:Power3.easeOut,duration:1.6},0.5);
-      tl.to(SeclightBox.current,{y:"150%",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
-      tl.to(outerBox.current,{color:"#fff",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
+      t2.to(SeclightBox.current,{y:"150%",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
+      t2.to(outerBox.current,{color:"#fff",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
   }, []);
   return (
     <section
