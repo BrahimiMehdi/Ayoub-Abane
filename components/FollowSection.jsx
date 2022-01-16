@@ -2,7 +2,7 @@ import React from 'react'
 
 const FollowSection = () => {
     return (
-        <section name="/follow" className="min-h-screen w-screen place-items-center sm:grid sm:grid-cols-2 flex flex-col text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
+        <section name="/follow" className="min-h-screen w-screen  pb-4 place-items-center sm:gap-2 sm:grid sm:grid-cols-2 flex flex-col text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
         <div className="h-full py-20 w-full justify-around flex flex-col">
         <h1 className="text-7xl font-Oswald">FIND ME</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
