@@ -15,7 +15,7 @@ const FollowSection = () => {
             </span>
           </a>
         </div>
-        <div className="w-[100%] h-full grid md:p-12 lg:p-20 place-items-center">
+        <div className="w-[100%] h-full grid md:p-12 lg:p-20 xl:p-32 place-items-center">
           <img className="object-contain" src="/aboutSecImage.jpg" alt="" />
         </div>
     </section>
