@@ -9,7 +9,7 @@ const FollowSection = () => {
             i usualy post on instagram Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus harum dolore excepturi deleniti laboriosam ipsa quos explicabo, natus voluptate atque deserunt reiciendis,
              assumenda reprehenderit dicta ducimus nostrum earum accusamus. Possimus.
           </p>
-          <a rel="noreferrer"  rel="noopener" target="_blank" href="https://www.instagram.com/ayxubo.art/">
+          <a rel="noreferrer noopener" target="_blank" href="https://www.instagram.com/ayxubo.art/">
             <span className="font-Montserrat text-main-light border-main-white text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-light active:scale-95 md:hover:text-black duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]">
               FIND ME
             </span>
