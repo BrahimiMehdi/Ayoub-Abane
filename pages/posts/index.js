@@ -15,7 +15,7 @@ const index = ({ postData }) => {
       <section className="grid md:grid-cols-2 transition-all absolute top-0  sm:grid-cols-1 lg:grid-cols-3 auto-rows-fr  py-8 px-12  gap-8">
         {postData.map((post,index) => {
           return (
-            <div className={`bg-main-light h-full transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
+            <div key={index} className={`bg-main-light h-full transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
               
                 <img
                   src={post.backgroundImg.url}
