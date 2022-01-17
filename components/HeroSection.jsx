@@ -33,20 +33,22 @@ const HeroSection = ({ openSideBar }) => {
         { x: "300px", delay: 1, ease: Power3.easeOut, duration: 1.6 },
         0.5
       );
-    t2.to(SeclightBox.current, {
-      y: "200%",
-      scrollTrigger: {
-        trigger: "#aboutSection",
-        start: "top bottom",
-        scrub: 1,
-      },
-    });
+    
     t2.to(outerBox.current, {
       color: "#fff",
       scrollTrigger: {
         trigger: "#aboutSection",
         start: "top bottom",
         scrub: 1,
+      },
+    })
+    .to(SeclightBox.current, {
+      y: "200%",
+      scrollTrigger: {
+        trigger: "#aboutSection",
+        start: "top bottom",
+        scrub: 1,
+        pin:outerBox.current
       },
     });
   }, []);

@@ -9,10 +9,10 @@ const AboutSection = () => {
     const aboutContent=useRef()
     const tl = gsap.timeline()
     useEffect(() => {
-        tl.from(aboutImage.current,{x:"-60%",scale:0.7,ease:Power3.easeOut,scrollTrigger:{
+        tl.from(aboutImage.current,{x:"-60%",ease:Power3.easeOut,scrollTrigger:{
             trigger:"#aboutSection",
             scrub:1,
-            start:"top bottom"
+            start:"top bottom",
         }})
         tl.from(aboutContent.current,{x:"60%",scale:0.7,opacity:0,ease:Power3.easeOut,scrollTrigger:{
             trigger:"#aboutSection",
@@ -34,6 +34,7 @@ const AboutSection = () => {
         <div id="aboutSection" name="/about" className="w-screen min-h-screen md:grid flex flex-col  md:grid-cols-2">
         <div ref={aboutImage} className="w-full bg-main-dark min-h-full grid place-items-center">
         <img
+          id="innerImage"
           className="object-cover h-full w-full object-center"
           src="/AboutImage.jpg"
           alt="image contains a photo of ayoube"
