@@ -13,7 +13,7 @@ const index = ({ postData }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="grid md:grid-cols-2 transition-all absolute top-0  sm:grid-cols-1 lg:grid-cols-3 auto-rows-fr  py-8 px-12  gap-8">
-        {postData.map((post) => {
+        {postData.map((post,index) => {
           return (
             <div className={`bg-main-light h-full transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
               
@@ -27,7 +27,7 @@ const index = ({ postData }) => {
                 className="transition duration-700 mr-8 uppercase font-Oswald tracking-wide cursor-pointer 
                 hover:text-main-blue hover:scale-105 text-3xl  font-semibold"
               >
-                <Link href={`/post/${post.slug}`}>{post.title}</Link>
+                <Link key={index} href={`/post/${post.slug}`}>{post.title}</Link>
               </h1>
               <div className="font-medium text-gray-700 ">
                   <svg
@@ -56,7 +56,7 @@ const index = ({ postData }) => {
                 {post.postDescription}
               </p>
               <div className="grid w-full place-items-center px-2">
-                <Link className="transition-all" href={`/post/${post.slug}`}>
+                <Link key={index} className="transition-all" href={`/post/${post.slug}`}>
                   <span className="font-Montserrat text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[60%] md:w-full lg:w-[90%] lg:h-[2.5rem] text-center py-[7px] border-black">
                     Continue Reading
                   </span>
