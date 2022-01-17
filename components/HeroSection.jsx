@@ -85,7 +85,7 @@ const HeroSection = ({ openSideBar }) => {
             </Link>
           </header>
         </div>
-        <div ref={SeclightBox} className="bg-main-light fixed h-screen w-screen -z-20">
+        <div ref={SeclightBox} className="bg-main-light top-0 fixed h-screen w-screen -z-20">
 
       </div>
       </div>
