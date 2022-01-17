@@ -40,6 +40,7 @@ const HeroSection = ({ openSideBar }) => {
         trigger: "#aboutSection",
         start: "top bottom",
         scrub: 1,
+        
       },
     })
     .to(SeclightBox.current, {
@@ -48,7 +49,7 @@ const HeroSection = ({ openSideBar }) => {
         trigger: "#aboutSection",
         start: "top bottom",
         scrub: 1,
-        pin:outerBox.current
+
       },
     });
   }, []);
