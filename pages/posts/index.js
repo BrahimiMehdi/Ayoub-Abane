@@ -12,15 +12,15 @@ const index = ({ postData }) => {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="grid md:grid-cols-2 transition-all absolute top-0  sm:grid-cols-1 lg:grid-cols-3 auto-rows-fr  py-8 px-12  gap-8">
+      <section className="grid md:grid-cols-2 transition-all  absolute top-0  sm:grid-cols-1 lg:grid-cols-3 auto-rows-fr  py-8 px-12  gap-8">
         {postData.map((post,index) => {
           return (
-            <div key={index} className={`bg-main-light h-full transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
+            <div key={index} className={`bg-main-light h-full lg:rounded-xl transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
               
                 <img
                   src={post.backgroundImg.url}
                   alt={post.title}
-                  className="object-top relative h-80 top-0 max-w-full object-cover shadow-lg   lg:rounded-lg"
+                  className="object-center relative h-80 top-0 max-w-full object-cover shadow-lg   lg:rounded-lg"
                 />
               <div className="flex px-4 items-center">
               <h1
@@ -57,7 +57,7 @@ const index = ({ postData }) => {
               </p>
               <div className="grid w-full place-items-center px-2">
                 <Link key={index} className="transition-all" href={`/post/${post.slug}`}>
-                  <span className="font-Montserrat text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[60%] md:w-full lg:w-[90%] lg:h-[2.5rem] text-center py-[7px] border-black">
+                  <span className="font-Montserrat  uppercase text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[60%] md:w-full lg:w-[90%] lg:h-[2.5rem] text-center py-[7px] border-black">
                     Continue Reading
                   </span>
                 </Link>
