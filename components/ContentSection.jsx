@@ -24,7 +24,7 @@ const ContentSection = () => {
         <section id="contentSection" name="/content" className="min-h-screen overflow-hidden bg-main-light w-screen  pb-4 place-items-center sm:gap-2 sm:grid sm:grid-cols-2 flex flex-col-reverse text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
         
         <div className="w-[80%] h-full grid py-12  place-items-center">
-          <img ref={contentImage} className="object-contain border-[50px] border-main-dark " src="/ContentImage.jpg" alt="" />
+          <img ref={contentImage} className="object-contain border-[5px] sm:border-[20px] lg:border-[50px] border-main-dark " src="/ContentImage.jpg" alt="" />
         </div>
         <div ref={contentText} className="h-full text-main-dark py-20 w-full justify-around flex flex-col">
         <h1 className="text-7xl font-Oswald">MY CONTENT</h1>
