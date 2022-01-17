@@ -4,65 +4,48 @@ import Head from "next/head";
 import Link from "next/link";
 import { gsap } from "gsap";
 import moment from "moment";
+import { AiOutlineDoubleLeft } from "react-icons/ai";
 const index = ({ postData }) => {
   return (
-    <main className="min-h-screen relative overflow-x-hidden w-screen grid bg-main-dark place-items-center">
-      <Head>
+    <main className="bg-main-dark overflow-x-auto max-w-screen min-h-screen flex flex-col">
+        <Head>
         <title>Ayoub Abane</title>
 
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
-      <section className="grid md:grid-cols-2 transition-all  absolute top-0  sm:grid-cols-1 lg:grid-cols-3 auto-rows-fr  py-8 px-12  gap-8">
-        {postData.map((post,index) => {
+      <div className="flex text-center items-center justify-center mt-2">
+        <h1 className="text-6xl font-Oswald uppercase text-main-light">
+          posts
+        </h1>
+      </div>
+      <Link href="/">
+        <AiOutlineDoubleLeft className="text-5xl cursor-pointer float-left hover:scale-105 transition-all hover:text-main-blue text-main-light" />
+      </Link>
+
+      <section className="grid  sm:grid-cols-2 md:grid-cols-5 p-4 gap-8 sm:gap-2 place-items-center grid-cols-1 min-h-screen max-w-screen">
+        {postData.map((post, index) => {
           return (
-            <div key={index} className={`bg-main-light h-full lg:rounded-xl transition-all flex flex-col justify-between shadow-lg p-0 lg:p-8 pb-12 mb-8 ${post.bigSized ? "lg:col-span-2  " :""}`}>
-              
-                <img
-                  src={post.backgroundImg.url}
-                  alt={post.title}
-                  className="object-center relative h-80 top-0 max-w-full object-cover shadow-lg   lg:rounded-lg"
-                />
-              <div className="flex px-4 items-center">
-              <h1
-                className="transition duration-700 mr-8 uppercase font-Oswald tracking-wide cursor-pointer 
-                hover:text-main-blue hover:scale-105 text-3xl  font-semibold"
+            <Link key={index} href={`/posts/${post.slug}`}>
+                
+              <div
+                className={`w-[60%] text-xl transition-all duration-300 sm:w-[80%] md:w-full hover:scale-95 hover:text-2xl ease-in-out cursor-pointer bg-main-dark min-h-full grid place-items-center ${
+                  post.large ? "md:col-span-2" : "md:col-span-1"
+                } ${post.tall ? "md:row-span-2" : "md:row-span-1"}`}
               >
-                <Link key={index} href={`/posts/${post.slug}`}>{post.title}</Link>
-              </h1>
-              <div className="font-medium text-gray-700 ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 inline mr-2 text-main-dark"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                  <span>{moment(post.createdatAt).format("MMM DD ,YYYY")}</span>
-                </div>
+                <h1
+                    style={{color:post.titleColor.hex}}
+                  className={` font-semibold  absolute font-Oswald z-20 tracking-wide uppercase`}
+                >
+                  {post.title}
+                </h1>
+                <img
+                  className="w-full h-full  transition-all duration-300 hover:blur-sm object-cover"
+                  src={post.backgroundImg.url}
+                  alt=""
+                />
               </div>
-              
-              <div className="block lg:flex text-left items-center justify-center mb-8 w-full">
-                
-                
-              </div>
-              <p className="text-lg pl-4 text-main-dark font-Montserrat font-normal  mb-8">
-                {post.postDescription}
-              </p>
-              <div className="grid w-full place-items-center px-2">
-                <Link key={index} className="transition-all" href={`/post/${post.slug}`}>
-                  <span className="font-Montserrat  uppercase text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[60%] md:w-full lg:w-[90%] lg:h-[2.5rem] text-center py-[7px] border-black">
-                    Continue Reading
-                  </span>
-                </Link>
-              </div>
-            </div>
+            </Link>
           );
         })}
       </section>

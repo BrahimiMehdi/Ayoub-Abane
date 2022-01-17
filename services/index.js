@@ -10,7 +10,11 @@ export const getPosts = async () => {
         createdAt
         slug
         title
-        bigSized
+        large
+        tall
+        titleColor{
+            hex
+        }
         postDescription
       }
     }
