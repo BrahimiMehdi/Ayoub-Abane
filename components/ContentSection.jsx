@@ -32,7 +32,7 @@ const ContentSection = () => {
             i usualy post on instagram Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus harum dolore excepturi deleniti laboriosam ipsa quos explicabo, natus voluptate atque deserunt reiciendis,
              assumenda reprehenderit dicta ducimus nostrum earum accusamus. Possimus.
           </p>
-          <Link href="/challenges">
+          <Link href="/posts">
             <span className="font-Montserrat border-main-dark text-main-dark text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]">
               JOIN ME
             </span>
