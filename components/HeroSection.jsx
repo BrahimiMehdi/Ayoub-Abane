@@ -25,8 +25,9 @@ const HeroSection = ({ openSideBar }) => {
       )
       
       .from(navBar.current,{x:"300px",delay:1,ease:Power3.easeOut,duration:1.6},0.5);
-      t2.to(SeclightBox.current,{y:"150%",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
+      t2.to(SeclightBox.current,{y:"200%",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
       t2.to(outerBox.current,{color:"#fff",scrollTrigger:{trigger:"#aboutSection",start:"top bottom",scrub:1}})
+      
   }, []);
   return (
     <section
@@ -50,7 +51,7 @@ const HeroSection = ({ openSideBar }) => {
               Monotonectally synergize resource.
             </p>
             <Link to="/about">
-              <span className="font-Montserrat text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-light active:scale-95 md:hover:text-black duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px] border-black">
+              <span className="font-Montserrat text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px] border-black">
                 SEE MORE
               </span>
             </Link>
@@ -84,13 +85,11 @@ const HeroSection = ({ openSideBar }) => {
             </Link>
           </header>
         </div>
-      </div>
-      <div className="fixed bg-main-dark h-screen w-screen top-0 -z-30"></div>
+        <div ref={SeclightBox} className="bg-main-light fixed h-screen w-screen -z-20">
 
-      <div
-        ref={SeclightBox}
-        className="fixed bg-main-light h-screen w-screen top-0 -z-20"
-      ></div>
+      </div>
+      </div>
+      
     </section>
   );
 };

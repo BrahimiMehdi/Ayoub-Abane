@@ -20,7 +20,7 @@ const FollowSection = () => {
         
     }, [])
     return (
-        <section id="followSection" name="/follow" className="min-h-screen overflow-hidden w-screen  pb-4 place-items-center sm:gap-2 sm:grid sm:grid-cols-2 flex flex-col flex-col-reverse text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
+        <section id="followSection" name="/follow" className="min-h-screen overflow-hidden w-screen  pb-4 place-items-center sm:gap-2 sm:grid sm:grid-cols-2 flex bg-main-dark flex-col-reverse text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
         <div ref={followContent} className="h-full py-20 w-full justify-around flex flex-col">
         <h1 className="text-7xl font-Oswald">FIND ME</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
