@@ -32,7 +32,7 @@ const HeroSection = ({ openSideBar }) => {
   return (
     <section
 
-      className="min-h-screen grid place-items-center w-scree"
+      className="min-h-screen grid place-items-center w-screen"
     >
       <div  ref={outerBox}  className="min-h-full w-full grid place-items-center px-8 md:pl-[80px] md:pr-[50px]">
         <div className="flex flex-start md:hidden w-full items-center h-[80px]  text-6xl">
