@@ -27,7 +27,7 @@ const index = ({ postData }) => {
                 className="transition duration-700 mr-8 uppercase font-Oswald tracking-wide cursor-pointer 
                 hover:text-main-blue hover:scale-105 text-3xl  font-semibold"
               >
-                <Link key={index} href={`/post/${post.slug}`}>{post.title}</Link>
+                <Link key={index} href={`/posts/${post.slug}`}>{post.title}</Link>
               </h1>
               <div className="font-medium text-gray-700 ">
                   <svg

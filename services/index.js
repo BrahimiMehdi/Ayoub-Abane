@@ -3,7 +3,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 export const getPosts = async () => {
   const query = gql`
     query MyQuery {
-      posts {
+      posts(orderBy: createdAt_DESC) {
         backgroundImg {
           url
         }
