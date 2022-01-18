@@ -15,7 +15,7 @@ export const getPosts = async () => {
         titleColor {
           hex
         }
-        postDescription
+        
       }
     }
   `;
