@@ -30,7 +30,7 @@ const AboutSection = () => {
         }})
     }, [])
   return (
-    <section  className="w-screen min-h-screen flex-col">
+    <section  className="w-screen min-h-screen  flex-col">
         <div id="aboutSection" name="/about" className="w-screen min-h-screen md:grid flex flex-col  md:grid-cols-2">
         <div ref={aboutImage} className="w-full bg-main-dark min-h-full grid place-items-center">
         <img

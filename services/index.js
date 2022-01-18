@@ -12,8 +12,8 @@ export const getPosts = async () => {
         title
         large
         tall
-        titleColor{
-            hex
+        titleColor {
+          hex
         }
         postDescription
       }
@@ -21,4 +21,32 @@ export const getPosts = async () => {
   `;
   const result = await request(graphqlAPI, query);
   return result.posts;
+};
+export const getPostDetails = async (slug) => {
+  const query = gql`
+    query MyQuery($slug: String!) {
+      post(where: { slug: $slug }) {
+        title
+        titleColor {
+          hex
+        }
+        
+        fullPostText
+        createdAt
+        downloadFile {
+          url
+          fileName
+        }
+        hasDownload
+        backgroundImg {
+          url
+        }
+        backgroundClr {
+          hex
+        }
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query, { slug });
+  return result.post;
 };
