@@ -1,6 +1,7 @@
 import React from "react";
 import { getPosts, getPostDetails } from "../../services";
 import { Post } from "../../components";
+import Head from "next/head";
 const postDetails = ({ postDetailsData }) => {
   return (
     <main className="min-h-screen bg-main-dark max-w-screen grid md:grid-cols-8 sm:grid-cols-2 grid-cols-1 grid-rows-2 lg:grid-cols-12 sm:grid-rows-1">
