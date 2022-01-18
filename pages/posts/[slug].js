@@ -11,7 +11,7 @@ const postDetails = ({ postDetailsData }) => {
       </Head>
       <div className="max-w-full h-full grid place-items-center md:col-span-2 sm:col-span-1 order-2 sm:order-1 col-span-1 lg:col-span-4">
         <img
-          className="object-cover max-w-full h-full"
+          className="object-cover object-center max-w-full h-full"
           src={postDetailsData.backgroundImg.url}
           alt=""
         />
