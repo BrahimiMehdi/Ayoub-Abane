@@ -8,11 +8,10 @@ import { AiOutlineDoubleLeft } from "react-icons/ai";
 const index = ({ postData }) => {
   return (
     <main className="bg-main-dark overflow-x-auto max-w-screen min-h-screen flex flex-col">
-        <Head>
+      <Head>
         <title>Ayoub Abane</title>
 
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
       <div className="flex text-center items-center justify-center mt-2">
         <h1 className="text-6xl font-Oswald uppercase text-main-light">
@@ -27,14 +26,13 @@ const index = ({ postData }) => {
         {postData.map((post, index) => {
           return (
             <Link key={index} href={`/posts/${post.slug}`}>
-                
               <div
                 className={`w-[60%] text-xl transition-all duration-300 sm:w-[80%] md:w-full hover:scale-95 hover:text-2xl ease-in-out cursor-pointer bg-main-dark min-h-full grid place-items-center ${
                   post.large ? "md:col-span-2" : "md:col-span-1"
                 } ${post.tall ? "md:row-span-2" : "md:row-span-1"}`}
               >
                 <h1
-                    style={{color:post.titleColor.hex}}
+                  style={{ color: post.titleColor.hex }}
                   className={` font-semibold  absolute font-Oswald z-20 tracking-wide uppercase`}
                 >
                   {post.title}
