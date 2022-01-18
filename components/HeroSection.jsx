@@ -96,7 +96,7 @@ const HeroSection = ({ openSideBar }) => {
           </div>
           <header
             ref={navBar}
-            className="md:flex py-8 hidden md:flex-col w-[20%] font-Montserrat tracking-widest  ml-20 justify-between"
+            className="md:flex py-8 hidden md:flex-col w-[20%] font-Montserrat tracking-widest md:ml-12  lg:ml-20 justify-between"
           >
             <Link
               className="cursor-pointer transition-all active:scale-95 md:hover:scale-105 md:hover:text-black"
