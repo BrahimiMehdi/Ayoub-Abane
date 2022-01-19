@@ -4,14 +4,14 @@ import { Post } from "../../components";
 import Head from "next/head";
 const postDetails = ({ postDetailsData }) => {
   return (
-    <main className="min-h-screen bg-main-dark max-w-screen grid md:grid-cols-8 sm:grid-cols-2 grid-cols-1 grid-rows-2 lg:grid-cols-12 sm:grid-rows-1">
+    <main className="min-h-screen sm:bg-main-dark max-w-screen grid md:grid-cols-8 sm:grid-cols-2 grid-cols-1 grid-rows-2 lg:grid-cols-12 sm:grid-rows-1">
       <Head>
         <title>Ayoub Abane</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="max-w-full h-full grid place-items-center md:col-span-2 sm:col-span-1 order-2 sm:order-1 col-span-1 lg:col-span-4">
         <img
-          className="object-cover object-center max-w-full h-full"
+          className="object-cover object-center sm:p-0 p-4 max-w-full h-full"
           src={postDetailsData.backgroundImg.url}
           alt=""
         />
