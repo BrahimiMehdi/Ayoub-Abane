@@ -44,8 +44,10 @@ const AboutSection = () => {
         <div ref={aboutContent} className="w-full text-main-dark z-10 min-h-[60%] flex flex-col justify-between p-12">
           <h1 className="text-7xl font-Oswald">WHO AM I ?</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
-            a pharmacy student at the university of algeries 1
-            i am 20 years old bla bla bla bla
+            a pharmacy student at the university of benyoucef ben khedda
+            currently on my seconde year.
+            i also practice karate.I love going to the gym and drawing
+            illustrations
           </p>
           <img src="/chemistry.svg" width="200px" alt="" />
         </div>

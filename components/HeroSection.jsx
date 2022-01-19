@@ -77,8 +77,8 @@ const HeroSection = ({ openSideBar }) => {
               AYOUB ABANE
             </h1>
             <p className="text-2xl font-light my-6 font-Oswald">
-              Dynamically empower seamless markets for enterprise-wide systems.
-              Monotonectally synergize resource.
+            Of course it’s hard. It’s supposed to be hard. If it were easy, everybody would do it.
+            Hard is what makes it great.
             </p>
             <Link to="/about">
               <span className="font-Montserrat text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px] border-black">

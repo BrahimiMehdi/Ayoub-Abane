@@ -25,6 +25,7 @@ const index = ({ postData }) => {
       <section className="grid  sm:grid-cols-2 md:grid-cols-5 p-4 gap-8 sm:gap-2 place-items-center grid-cols-1 min-h-screen max-w-screen">
         {postData.map((post, index) => {
           return (
+
             <Link key={index} href={`/posts/${post.slug}`}>
               <div
                 className={`w-[60%] text-xl transition-all duration-300 sm:w-[80%] md:w-full hover:scale-95 hover:text-2xl ease-in-out cursor-pointer bg-main-dark min-h-full grid place-items-center ${
@@ -43,7 +44,7 @@ const index = ({ postData }) => {
                   alt=""
                 />
               </div>
-            </Link>
+            </Link>  
           );
         })}
       </section>

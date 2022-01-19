@@ -29,8 +29,8 @@ const ContentSection = () => {
         <div ref={contentText} className="h-full text-main-dark py-20 w-full justify-around flex flex-col">
         <h1 className="text-7xl font-Oswald">MY CONTENT</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
-            i usualy post on instagram Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus harum dolore excepturi deleniti laboriosam ipsa quos explicabo, natus voluptate atque deserunt reiciendis,
-             assumenda reprehenderit dicta ducimus nostrum earum accusamus. Possimus.
+            You can find here a collection of posts and challenges i have made before.
+            with access to schedules and plans that came alongside them.
           </p>
           <Link href="/posts">
             <span className="font-Montserrat border-main-dark text-main-dark text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]">
