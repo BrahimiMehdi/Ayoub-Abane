@@ -45,7 +45,7 @@ const AboutSection = () => {
           <h1 className="text-7xl font-Oswald uppercase">WHO AM I ?</h1>
           <p className="sm:text-2xl  text-xl font-light my-6 font-Oswald">
             A pharmacy student at the university of Benyoucef Ben Khedda
-            currently on my seconde year.
+            currently on my second year.
             I also practice karate.I love going to the gym and drawing
             illustrations
           </p>
