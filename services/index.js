@@ -30,7 +30,8 @@ export const getPostDetails = async (slug) => {
         titleColor {
           hex
         }
-        
+        hasNotionLink
+        notionLink
         fullPostText
         createdAt
         downloadFile {

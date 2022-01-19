@@ -25,7 +25,13 @@ const Post = ({ postData }) => {
         href={postData.downloadFile.url }
         className="font-Montserrat mt-4 border-main-white text-xs sm:text-base cursor-pointer transition-all  active:scale-95 md:hover:scale-105 duration-200  inline-block tracking-widest border-2 w-[50%] uppercase md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]"
       >view file</a> : ""}
-      
+      { postData.hasNotionLink && postData.notionLink !="" ?<a
+        style={{borderColor:postData.titleColor.hex,color:postData.titleColor.hex}}
+        target="_blank"
+        rel="noreferrer noopener"
+        href={postData.notionLink}
+        className="font-Montserrat mt-4 border-main-white text-xs sm:text-base cursor-pointer transition-all  active:scale-95 md:hover:scale-105 duration-200  inline-block tracking-widest border-2 w-[50%] uppercase md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]"
+      >view on notion</a> : ""}
     </section>
   );
 };
