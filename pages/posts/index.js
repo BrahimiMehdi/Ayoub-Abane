@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import moment from "moment";
 import { AiOutlineDoubleLeft } from "react-icons/ai";
 const index = ({ postData }) => {
+  const rowCount = Math.ceil(postData.length/5);
   return (
     <main className="bg-main-dark overflow-x-auto max-w-screen min-h-screen flex flex-col">
       <Head>
@@ -22,8 +23,9 @@ const index = ({ postData }) => {
         <AiOutlineDoubleLeft className="text-5xl cursor-pointer float-left hover:scale-105 transition-all hover:text-main-blue text-main-light" />
       </Link>
 
-      <section className="grid  sm:grid-cols-2 md:grid-cols-5 p-4 gap-8 sm:gap-2 place-items-center grid-cols-1 min-h-screen max-w-screen">
+      <section className={`grid grid-flow-col grid-rows-[${rowCount}]  sm:grid-cols-2 md:grid-cols-5 p-4 gap-8 sm:gap-2 place-items-center grid-cols-1 min-h-screen max-w-screen`}>
         {postData.map((post, index) => {
+          
           return (
 
             <Link key={index} href={`/posts/${post.slug}`}>
