@@ -3,10 +3,10 @@ import { getPosts } from "../../services";
 import Head from "next/head";
 import Link from "next/link";
 import { gsap } from "gsap";
-import moment from "moment";
+import moment from "moment"
 import { AiOutlineDoubleLeft } from "react-icons/ai";
 const index = ({ postData }) => {
-  const rowCount = Math.ceil(postData.length/5);
+  let rowCount = Math.ceil(postData.length/5);
   return (
     <main className="bg-main-dark overflow-x-auto max-w-screen min-h-screen flex flex-col">
       <Head>
