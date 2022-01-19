@@ -6,8 +6,7 @@ import { gsap } from "gsap";
 import moment from "moment"
 import { AiOutlineDoubleLeft } from "react-icons/ai";
 const index = ({ postData }) => {
-  let rowCount = Math.ceil(postData.length/5);
-  console.log(rowCount)
+
   return (
     <main className="bg-main-dark overflow-x-auto max-w-screen min-h-screen flex flex-col">
       <Head>
