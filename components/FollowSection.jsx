@@ -22,10 +22,10 @@ const FollowSection = () => {
     return (
         <section id="followSection" name="/follow" className="min-h-screen overflow-hidden w-screen  pb-4 place-items-center sm:gap-2 sm:grid sm:grid-cols-2 flex bg-main-dark flex-col-reverse text-main-light px-8 md:pl-[80px] md:pr-[50px]" >
         <div ref={followContent} className="h-full py-20 w-full justify-around flex flex-col">
-        <h1 className="text-7xl font-Oswald">FIND ME</h1>
+        <h1 className="text-7xl font-Oswald uppercase">FIND ME</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
-            i usualy post daily on instagram about topics that i enjoy and love. <br />
-            make sure to follow! 
+            I usualy post daily on instagram about topics that i enjoy and love. <br />
+            Make sure to follow! 
           </p>
           <a className="font-Montserrat text-main-light border-main-white text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-light active:scale-95 md:hover:text-black duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]" rel="noreferrer noopener" target="_blank" href="https://www.instagram.com/ayxubo.art/">
             FOLLOW

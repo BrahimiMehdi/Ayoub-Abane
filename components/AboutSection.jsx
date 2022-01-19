@@ -42,11 +42,11 @@ const AboutSection = () => {
       </div>
       <div className="w-full h-full grid place-items-center">
         <div ref={aboutContent} className="w-full text-main-dark z-10 min-h-[60%] flex flex-col justify-between p-12">
-          <h1 className="text-7xl font-Oswald">WHO AM I ?</h1>
-          <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
-            a pharmacy student at the university of benyoucef ben khedda
+          <h1 className="text-7xl font-Oswald uppercase">WHO AM I ?</h1>
+          <p className="sm:text-2xl  text-xl font-light my-6 font-Oswald">
+            A pharmacy student at the university of Benyoucef Ben Khedda
             currently on my seconde year.
-            i also practice karate.I love going to the gym and drawing
+            I also practice karate.I love going to the gym and drawing
             illustrations
           </p>
           <img src="/chemistry.svg" width="200px" alt="" />

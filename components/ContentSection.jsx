@@ -27,10 +27,10 @@ const ContentSection = () => {
           <img ref={contentImage} className="object-contain border-[5px] sm:border-[20px] lg:border-[50px] border-main-dark " src="/ContentImage.jpg" alt="" />
         </div>
         <div ref={contentText} className="h-full text-main-dark py-20 w-full justify-around flex flex-col">
-        <h1 className="text-7xl font-Oswald">MY CONTENT</h1>
+        <h1 className="text-7xl uppercase font-Oswald">MY CONTENT</h1>
           <p className="sm:text-2xl text-xl font-light my-6 font-Oswald">
             You can find here a collection of posts and challenges i have made before.
-            with access to schedules and plans that came alongside them.
+            With access to schedules and plans that came alongside them.
           </p>
           <Link href="/posts">
             <span className="font-Montserrat border-main-dark text-main-dark text-xs sm:text-base cursor-pointer transition-all md:hover:bg-main-dark active:scale-95 md:hover:text-white duration-200  inline-block tracking-widest border-2 w-[50%] md:w-full lg:w-[40%] lg:h-[2.5rem] text-center py-[7px]">
