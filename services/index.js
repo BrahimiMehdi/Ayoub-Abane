@@ -33,6 +33,7 @@ export const getPostDetails = async (slug) => {
         hasNotionLink
         notionLink
         fullPostText
+        titleOnImage
         createdAt
         downloadFile {
           url

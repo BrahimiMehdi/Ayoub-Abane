@@ -32,12 +32,12 @@ const index = ({ postData }) => {
                   post.large ? "md:col-span-2" : "md:col-span-1"
                 } ${post.tall ? "md:row-span-2" : "md:row-span-1"}`}
               >
-                <h1
+                {post.titleOnImage ? <h1
                   style={{ color: post.titleColor.hex }}
                   className={` font-semibold  absolute font-Oswald z-20 tracking-wide uppercase`}
                 >
                   {post.title}
-                </h1>
+                </h1> : ""}
                 <img
                   className="w-full h-full  transition-all duration-300 hover:blur-sm object-cover"
                   src={post.backgroundImg.url}
