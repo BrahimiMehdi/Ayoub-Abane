@@ -14,7 +14,7 @@ const Post = ({ postData }) => {
         {postData.title}
       </h1>
 
-      <p className="font-Montserrat opacity-80 whitespace-pre-line tracking-wide text-2xl">
+      <p className="font-Oswald font-light opacity-80 whitespace-pre-line tracking-wide text-2xl">
         {postData.fullPostText}
       </p>
       
