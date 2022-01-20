@@ -11,6 +11,7 @@ export const getPosts = async () => {
         slug
         title
         large
+        titleOnImage
         tall
         titleColor {
           hex

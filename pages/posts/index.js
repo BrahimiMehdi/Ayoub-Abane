@@ -36,7 +36,7 @@ const index = ({ postData }) => {
               >
                 {post.titleOnImage ? <h1
                   style={{ color: post.titleColor.hex }}
-                  className={` font-semibold  absolute font-Oswald z-20 tracking-wide uppercase`}
+                  className="font-semibold  absolute font-Oswald z-20 tracking-wide uppercase"
                 >
                   {post.title}
                 </h1> : ""}
